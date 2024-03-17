@@ -139,7 +139,7 @@ cvtsi2ss	xmm1, eax
 	mulss	xmm7, [ten]
 	addss	xmm0, xmm1
 	jmp		.in_float
-	.is_neg: ; check wether the number is negative or not
+	.is_neg: ; check whether the number is negative or not
 	mov		al, [esi + ecx]
 	cmp		al, '-'
 	je 		.neg
